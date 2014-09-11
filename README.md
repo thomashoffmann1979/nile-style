@@ -1,4 +1,3 @@
-# nile
+# nile style
 
- nile (n(ode )tile) aims to be a tileserver using [NodeJS](http://nodejs.org/).
- 
+ A less based map styler, and png renderer.

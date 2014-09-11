@@ -1,6 +1,6 @@
 {
   "name": "nile-style",
-  "description": "Node Tile Server ",
+  "description": "Node Tile Server Map Style/ Renderer",
   "homepage": "https://github.com/tualo/nile-style",
   "main": "lib/main.js",
   "bin": {

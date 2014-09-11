@@ -1,4 +1,3 @@
-@name: '[name_en]';
 
 // Fonts //
 @sans: 'Source Sans Pro Regular';
@@ -6,17 +5,17 @@
 @sans_bold: 'Source Sans Pro Semibold';
 
 // Common Colors //
-@land: #fff;
+@land: #ffc;
 @water: #c3e6ff;
 
 .Map {
-  background-color: @land;
-  antialias: subpixel;
+  fill-color: @land;
+
 }
 
 .Line {
   [highway=track]{
-    color: gray;
+    color: green;
     line-width: 3;
     contour-color: black;
     contour-width: 1;
@@ -31,9 +30,17 @@
 
   [highway=residential]{
     color: yellow;
-    opacity: 0.5;
+    opacity: 0.9;
     line-width: 8;
     contour-color: black;
+    contour-width: 1;
+  }
+
+  [highway=motorway]{
+    color: yellow;
+    opacity: 0.9;
+    line-width: 30;
+    contour-color: orange;
     contour-width: 1;
   }
 }
@@ -42,7 +49,7 @@
   [area=yes]{
     line-width: 0.5;
     fill-color: 'rgb(0,0,255)';
-    opacity: 0.1;
+    opacity: 0.3;
   }
 
   [landuse=farmland]{
