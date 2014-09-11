@@ -14,12 +14,22 @@
 }
 
 .Line {
+  [zoom>=10]{
+
+  [highway=ALL]{
+    color: lightgreen;
+    line-width: 2;
+    contour-color: navy;
+    contour-width: 1;
+  }
+
   [highway=track]{
     color: green;
     line-width: 3;
     contour-color: black;
     contour-width: 1;
   }
+}
 
   [highway=service]{
     color: white;
@@ -58,10 +68,10 @@
     line-width: none;
     color: cyan;
   }
-
+  [zoom<10]{
   [boundary=administrative]{
     line-width: 0.5;
     color: 'rgb(255,0,0)';
   }
-
+}
 }
