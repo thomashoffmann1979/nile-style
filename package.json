@@ -1,0 +1,45 @@
+{
+  "name": "nile-style",
+  "description": "Node Tile Server ",
+  "homepage": "https://github.com/tualo/nile-style",
+  "main": "lib/main.js",
+  "bin": {
+    "ncss": "./bin/nile-style"
+  },
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "keywords": [
+    "gis",
+    "osm",
+    "tile",
+    "map",
+    "style"
+  ],
+  "author": [
+    {
+      "name": "Thomas Hoffmann",
+      "email": "thomas.hoffmann@tualo.de",
+      "url": "http://tualo.de/"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "Thomas Hoffmann",
+      "email": "thomas.hoffmann@tualo.de",
+      "url": "http://tualo.de/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tualo/nile-style.git"
+  },
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "colors": "0.6.2",
+    "carto": "0.13.0",
+    "canvas": "1.1.6",
+    "commander": "2.0.0"
+  }
+}

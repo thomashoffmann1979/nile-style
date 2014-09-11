@@ -1,0 +1,3324 @@
+{
+    "selectors": [],
+    "rules": [
+        {
+            "name": "@name",
+            "instance": "__default__",
+            "value": {
+                "value": [
+                    {
+                        "value": [
+                            {
+                                "value": "[name_en]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "index": 0,
+            "filename": null,
+            "variable": true
+        },
+        {
+            "value": "// Fonts //",
+            "silent": true
+        },
+        {
+            "name": "@sans",
+            "instance": "__default__",
+            "value": {
+                "value": [
+                    {
+                        "value": [
+                            {
+                                "value": "Source Sans Pro Regular"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "index": 33,
+            "filename": null,
+            "variable": true
+        },
+        {
+            "name": "@sans_italic",
+            "instance": "__default__",
+            "value": {
+                "value": [
+                    {
+                        "value": [
+                            {
+                                "value": "Source Sans Pro Italic"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "index": 67,
+            "filename": null,
+            "variable": true
+        },
+        {
+            "name": "@sans_bold",
+            "instance": "__default__",
+            "value": {
+                "value": [
+                    {
+                        "value": [
+                            {
+                                "value": "Source Sans Pro Semibold"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "index": 107,
+            "filename": null,
+            "variable": true
+        },
+        {
+            "value": "// Common Colors //",
+            "silent": true
+        },
+        {
+            "name": "@land",
+            "instance": "__default__",
+            "value": {
+                "value": [
+                    {
+                        "value": [
+                            {
+                                "rgb": [
+                                    255,
+                                    255,
+                                    255
+                                ],
+                                "alpha": 1
+                            }
+                        ]
+                    }
+                ]
+            },
+            "index": 168,
+            "filename": null,
+            "variable": true
+        },
+        {
+            "name": "@water",
+            "instance": "__default__",
+            "value": {
+                "value": [
+                    {
+                        "value": [
+                            {
+                                "rgb": [
+                                    195,
+                                    230,
+                                    255
+                                ],
+                                "alpha": 1
+                            }
+                        ]
+                    }
+                ]
+            },
+            "index": 181,
+            "filename": null,
+            "variable": true
+        },
+        {
+            "selectors": [
+                {
+                    "elements": [
+                        {
+                            "value": "Map"
+                        }
+                    ],
+                    "filters": {
+                        "filters": {}
+                    },
+                    "zoom": [],
+                    "conditions": 0,
+                    "index": 199
+                }
+            ],
+            "rules": [
+                {
+                    "name": "background-color",
+                    "instance": "__default__",
+                    "value": {
+                        "value": [
+                            {
+                                "value": [
+                                    {
+                                        "name": "@land",
+                                        "index": 223,
+                                        "filename": null
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "index": 205,
+                    "symbolizer": "map",
+                    "filename": null,
+                    "variable": false
+                }
+            ],
+            "_lookups": {},
+            "isMap": true
+        },
+        {
+            "value": "// Political boundaries //",
+            "silent": true
+        },
+        {
+            "selectors": [
+                {
+                    "elements": [
+                        {
+                            "value": "#admin",
+                            "type": "id",
+                            "clean": "admin"
+                        }
+                    ],
+                    "filters": {
+                        "filters": {
+                            "[admin_level]=": {
+                                "key": {
+                                    "value": "admin_level"
+                                },
+                                "op": "=",
+                                "val": {
+                                    "value": 2,
+                                    "unit": null,
+                                    "index": 267
+                                },
+                                "index": 267,
+                                "filename": null,
+                                "id": "[admin_level]=2"
+                            },
+                            "[maritime]=": {
+                                "key": {
+                                    "value": "maritime"
+                                },
+                                "op": "=",
+                                "val": {
+                                    "value": 0,
+                                    "unit": null,
+                                    "index": 282
+                                },
+                                "index": 282,
+                                "filename": null,
+                                "id": "[maritime]=0"
+                            }
+                        }
+                    },
+                    "zoom": [],
+                    "conditions": 2,
+                    "index": 282
+                }
+            ],
+            "rules": [
+                {
+                    "name": "line-join",
+                    "instance": "__default__",
+                    "value": {
+                        "value": [
+                            {
+                                "value": [
+                                    {
+                                        "value": "round",
+                                        "is": "keyword"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "index": 299,
+                    "symbolizer": "line",
+                    "filename": null,
+                    "variable": false
+                },
+                {
+                    "name": "line-color",
+                    "instance": "__default__",
+                    "value": {
+                        "value": [
+                            {
+                                "value": [
+                                    {
+                                        "rgb": [
+                                            187,
+                                            187,
+                                            238
+                                        ],
+                                        "alpha": 1
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "index": 319,
+                    "symbolizer": "line",
+                    "filename": null,
+                    "variable": false
+                },
+                {
+                    "name": "line-width",
+                    "instance": "__default__",
+                    "value": {
+                        "value": [
+                            {
+                                "value": [
+                                    {
+                                        "value": 1.4,
+                                        "unit": null,
+                                        "index": 339
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "index": 339,
+                    "symbolizer": "line",
+                    "filename": null,
+                    "variable": false
+                },
+                {
+                    "selectors": [
+                        {
+                            "elements": [],
+                            "filters": {
+                                "filters": {}
+                            },
+                            "zoom": [
+                                {
+                                    "op": "=",
+                                    "value": {
+                                        "value": 6,
+                                        "unit": null,
+                                        "index": 358
+                                    },
+                                    "index": 358
+                                }
+                            ],
+                            "conditions": 1,
+                            "index": 358
+                        }
+                    ],
+                    "rules": [
+                        {
+                            "name": "line-width",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "value": 2,
+                                                "unit": null,
+                                                "index": 369
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 369,
+                            "symbolizer": "line",
+                            "filename": null,
+                            "variable": false
+                        }
+                    ],
+                    "_lookups": {}
+                },
+                {
+                    "selectors": [
+                        {
+                            "elements": [],
+                            "filters": {
+                                "filters": {}
+                            },
+                            "zoom": [
+                                {
+                                    "op": "=",
+                                    "value": {
+                                        "value": 8,
+                                        "unit": null,
+                                        "index": 388
+                                    },
+                                    "index": 388
+                                }
+                            ],
+                            "conditions": 1,
+                            "index": 388
+                        }
+                    ],
+                    "rules": [
+                        {
+                            "name": "line-width",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "value": 4,
+                                                "unit": null,
+                                                "index": 399
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 399,
+                            "symbolizer": "line",
+                            "filename": null,
+                            "variable": false
+                        }
+                    ],
+                    "_lookups": {}
+                },
+                {
+                    "selectors": [
+                        {
+                            "elements": [],
+                            "filters": {
+                                "filters": {
+                                    "[disputed]=": {
+                                        "key": {
+                                            "value": "disputed"
+                                        },
+                                        "op": "=",
+                                        "val": {
+                                            "value": 1,
+                                            "unit": null,
+                                            "index": 418
+                                        },
+                                        "index": 418,
+                                        "filename": null,
+                                        "id": "[disputed]=1"
+                                    }
+                                }
+                            },
+                            "zoom": [],
+                            "conditions": 1,
+                            "index": 418
+                        }
+                    ],
+                    "rules": [
+                        {
+                            "name": "line-dasharray",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": 4,
+                                        "unit": null,
+                                        "index": 433
+                                    },
+                                    {
+                                        "value": 4,
+                                        "unit": null,
+                                        "index": 433
+                                    }
+                                ]
+                            },
+                            "index": 433,
+                            "symbolizer": "line",
+                            "filename": null,
+                            "variable": false
+                        }
+                    ],
+                    "_lookups": {}
+                }
+            ],
+            "_lookups": {}
+        },
+        {
+            "value": "// Places //",
+            "silent": true
+        },
+        {
+            "selectors": [
+                {
+                    "elements": [
+                        {
+                            "value": "#country_label",
+                            "type": "id",
+                            "clean": "country_label"
+                        }
+                    ],
+                    "filters": {
+                        "filters": {}
+                    },
+                    "zoom": [
+                        {
+                            "op": "=",
+                            "value": {
+                                "value": 3,
+                                "unit": null,
+                                "index": 487
+                            },
+                            "index": 487
+                        }
+                    ],
+                    "conditions": 1,
+                    "index": 487
+                }
+            ],
+            "rules": [
+                {
+                    "name": "text-name",
+                    "instance": "__default__",
+                    "value": {
+                        "value": [
+                            {
+                                "value": [
+                                    {
+                                        "name": "@name",
+                                        "index": 511,
+                                        "filename": null
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "index": 500,
+                    "symbolizer": "text",
+                    "filename": null,
+                    "variable": false
+                },
+                {
+                    "name": "text-face-name",
+                    "instance": "__default__",
+                    "value": {
+                        "value": [
+                            {
+                                "value": [
+                                    {
+                                        "name": "@sans_bold",
+                                        "index": 536,
+                                        "filename": null
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "index": 520,
+                    "symbolizer": "text",
+                    "filename": null,
+                    "variable": false
+                },
+                {
+                    "name": "text-fill",
+                    "instance": "__default__",
+                    "value": {
+                        "value": [
+                            {
+                                "value": [
+                                    {
+                                        "rgb": [
+                                            102,
+                                            102,
+                                            170
+                                        ],
+                                        "alpha": 1
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "index": 550,
+                    "symbolizer": "text",
+                    "filename": null,
+                    "variable": false
+                },
+                {
+                    "name": "text-size",
+                    "instance": "__default__",
+                    "value": {
+                        "value": [
+                            {
+                                "value": [
+                                    {
+                                        "value": 12,
+                                        "unit": null,
+                                        "index": 569
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "index": 569,
+                    "symbolizer": "text",
+                    "filename": null,
+                    "variable": false
+                },
+                {
+                    "selectors": [
+                        {
+                            "elements": [],
+                            "filters": {
+                                "filters": {
+                                    "[scalerank]=": {
+                                        "key": {
+                                            "value": "scalerank"
+                                        },
+                                        "op": "=",
+                                        "val": {
+                                            "value": 1,
+                                            "unit": null,
+                                            "index": 594
+                                        },
+                                        "index": 594,
+                                        "filename": null,
+                                        "id": "[scalerank]=1"
+                                    }
+                                }
+                            },
+                            "zoom": [
+                                {
+                                    "op": "=",
+                                    "value": {
+                                        "value": 3,
+                                        "unit": null,
+                                        "index": 586
+                                    },
+                                    "index": 586
+                                }
+                            ],
+                            "conditions": 2,
+                            "index": 594
+                        },
+                        {
+                            "elements": [],
+                            "filters": {
+                                "filters": {
+                                    "[scalerank]=": {
+                                        "key": {
+                                            "value": "scalerank"
+                                        },
+                                        "op": "=",
+                                        "val": {
+                                            "value": 2,
+                                            "unit": null,
+                                            "index": 619
+                                        },
+                                        "index": 619,
+                                        "filename": null,
+                                        "id": "[scalerank]=2"
+                                    }
+                                }
+                            },
+                            "zoom": [
+                                {
+                                    "op": "=",
+                                    "value": {
+                                        "value": 4,
+                                        "unit": null,
+                                        "index": 611
+                                    },
+                                    "index": 611
+                                }
+                            ],
+                            "conditions": 2,
+                            "index": 619
+                        },
+                        {
+                            "elements": [],
+                            "filters": {
+                                "filters": {
+                                    "[scalerank]=": {
+                                        "key": {
+                                            "value": "scalerank"
+                                        },
+                                        "op": "=",
+                                        "val": {
+                                            "value": 3,
+                                            "unit": null,
+                                            "index": 644
+                                        },
+                                        "index": 644,
+                                        "filename": null,
+                                        "id": "[scalerank]=3"
+                                    }
+                                }
+                            },
+                            "zoom": [
+                                {
+                                    "op": "=",
+                                    "value": {
+                                        "value": 5,
+                                        "unit": null,
+                                        "index": 636
+                                    },
+                                    "index": 636
+                                }
+                            ],
+                            "conditions": 2,
+                            "index": 644
+                        },
+                        {
+                            "elements": [],
+                            "filters": {
+                                "filters": {
+                                    "[scalerank]>": {
+                                        "key": {
+                                            "value": "scalerank"
+                                        },
+                                        "op": ">",
+                                        "val": {
+                                            "value": 3,
+                                            "unit": null,
+                                            "index": 669
+                                        },
+                                        "index": 669,
+                                        "filename": null,
+                                        "id": "[scalerank]>3"
+                                    }
+                                }
+                            },
+                            "zoom": [
+                                {
+                                    "op": "=",
+                                    "value": {
+                                        "value": 6,
+                                        "unit": null,
+                                        "index": 661
+                                    },
+                                    "index": 661
+                                }
+                            ],
+                            "conditions": 2,
+                            "index": 669
+                        }
+                    ],
+                    "rules": [
+                        {
+                            "name": "text-size",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "value": 14,
+                                                "unit": null,
+                                                "index": 689
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 689,
+                            "symbolizer": "text",
+                            "filename": null,
+                            "variable": false
+                        }
+                    ],
+                    "_lookups": {}
+                },
+                {
+                    "selectors": [
+                        {
+                            "elements": [],
+                            "filters": {
+                                "filters": {
+                                    "[scalerank]=": {
+                                        "key": {
+                                            "value": "scalerank"
+                                        },
+                                        "op": "=",
+                                        "val": {
+                                            "value": 1,
+                                            "unit": null,
+                                            "index": 718
+                                        },
+                                        "index": 718,
+                                        "filename": null,
+                                        "id": "[scalerank]=1"
+                                    }
+                                }
+                            },
+                            "zoom": [
+                                {
+                                    "op": "=",
+                                    "value": {
+                                        "value": 4,
+                                        "unit": null,
+                                        "index": 710
+                                    },
+                                    "index": 710
+                                }
+                            ],
+                            "conditions": 2,
+                            "index": 718
+                        },
+                        {
+                            "elements": [],
+                            "filters": {
+                                "filters": {
+                                    "[scalerank]=": {
+                                        "key": {
+                                            "value": "scalerank"
+                                        },
+                                        "op": "=",
+                                        "val": {
+                                            "value": 2,
+                                            "unit": null,
+                                            "index": 743
+                                        },
+                                        "index": 743,
+                                        "filename": null,
+                                        "id": "[scalerank]=2"
+                                    }
+                                }
+                            },
+                            "zoom": [
+                                {
+                                    "op": "=",
+                                    "value": {
+                                        "value": 5,
+                                        "unit": null,
+                                        "index": 735
+                                    },
+                                    "index": 735
+                                }
+                            ],
+                            "conditions": 2,
+                            "index": 743
+                        },
+                        {
+                            "elements": [],
+                            "filters": {
+                                "filters": {
+                                    "[scalerank]=": {
+                                        "key": {
+                                            "value": "scalerank"
+                                        },
+                                        "op": "=",
+                                        "val": {
+                                            "value": 3,
+                                            "unit": null,
+                                            "index": 768
+                                        },
+                                        "index": 768,
+                                        "filename": null,
+                                        "id": "[scalerank]=3"
+                                    }
+                                }
+                            },
+                            "zoom": [
+                                {
+                                    "op": "=",
+                                    "value": {
+                                        "value": 6,
+                                        "unit": null,
+                                        "index": 760
+                                    },
+                                    "index": 760
+                                }
+                            ],
+                            "conditions": 2,
+                            "index": 768
+                        },
+                        {
+                            "elements": [],
+                            "filters": {
+                                "filters": {
+                                    "[scalerank]=": {
+                                        "key": {
+                                            "value": "scalerank"
+                                        },
+                                        "op": "=",
+                                        "val": {
+                                            "value": 3,
+                                            "unit": null,
+                                            "index": 793
+                                        },
+                                        "index": 793,
+                                        "filename": null,
+                                        "id": "[scalerank]=3"
+                                    }
+                                }
+                            },
+                            "zoom": [
+                                {
+                                    "op": "=",
+                                    "value": {
+                                        "value": 7,
+                                        "unit": null,
+                                        "index": 785
+                                    },
+                                    "index": 785
+                                }
+                            ],
+                            "conditions": 2,
+                            "index": 793
+                        }
+                    ],
+                    "rules": [
+                        {
+                            "name": "text-size",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "value": 16,
+                                                "unit": null,
+                                                "index": 813
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 813,
+                            "symbolizer": "text",
+                            "filename": null,
+                            "variable": false
+                        }
+                    ],
+                    "_lookups": {}
+                }
+            ],
+            "_lookups": {}
+        },
+        {
+            "selectors": [
+                {
+                    "elements": [
+                        {
+                            "value": "#country_label_line",
+                            "type": "id",
+                            "clean": "country_label_line"
+                        }
+                    ],
+                    "filters": {
+                        "filters": {}
+                    },
+                    "zoom": [],
+                    "conditions": 0,
+                    "index": 835
+                }
+            ],
+            "rules": [
+                {
+                    "name": "line-color",
+                    "instance": "__default__",
+                    "value": {
+                        "value": [
+                            {
+                                "value": [
+                                    {
+                                        "name": "fadeout",
+                                        "args": [
+                                            {
+                                                "value": [
+                                                    {
+                                                        "rgb": [
+                                                            102,
+                                                            102,
+                                                            170
+                                                        ],
+                                                        "alpha": 1
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "value": [
+                                                    {
+                                                        "value": 75,
+                                                        "unit": "%",
+                                                        "index": 857
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "index": 886
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "index": 857,
+                    "symbolizer": "line",
+                    "filename": null,
+                    "variable": false
+                }
+            ],
+            "_lookups": {}
+        },
+        {
+            "selectors": [
+                {
+                    "elements": [
+                        {
+                            "value": "#place_label",
+                            "type": "id",
+                            "clean": "place_label"
+                        }
+                    ],
+                    "filters": {
+                        "filters": {
+                            "[localrank]<=": {
+                                "key": {
+                                    "value": "localrank"
+                                },
+                                "op": "<=",
+                                "val": {
+                                    "value": 2,
+                                    "unit": null,
+                                    "index": 903
+                                },
+                                "index": 903,
+                                "filename": null,
+                                "id": "[localrank]<=2"
+                            }
+                        }
+                    },
+                    "zoom": [],
+                    "conditions": 1,
+                    "index": 903
+                }
+            ],
+            "rules": [
+                {
+                    "selectors": [
+                        {
+                            "elements": [],
+                            "filters": {
+                                "filters": {
+                                    "[type]=": {
+                                        "key": {
+                                            "value": "type"
+                                        },
+                                        "op": "=",
+                                        "val": {
+                                            "value": "city"
+                                        },
+                                        "index": 922,
+                                        "filename": null,
+                                        "id": "[type]=city"
+                                    }
+                                }
+                            },
+                            "zoom": [
+                                {
+                                    "op": "<=",
+                                    "value": {
+                                        "value": 15,
+                                        "unit": null,
+                                        "index": 935
+                                    },
+                                    "index": 935
+                                }
+                            ],
+                            "conditions": 2,
+                            "index": 935
+                        }
+                    ],
+                    "rules": [
+                        {
+                            "name": "text-name",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "name": "@name",
+                                                "index": 963,
+                                                "filename": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 952,
+                            "symbolizer": "text",
+                            "filename": null,
+                            "variable": false
+                        },
+                        {
+                            "name": "text-face-name",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "name": "@sans_bold",
+                                                "index": 990,
+                                                "filename": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 974,
+                            "symbolizer": "text",
+                            "filename": null,
+                            "variable": false
+                        },
+                        {
+                            "name": "text-fill",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "rgb": [
+                                                    68,
+                                                    68,
+                                                    68
+                                                ],
+                                                "alpha": 1
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 1006,
+                            "symbolizer": "text",
+                            "filename": null,
+                            "variable": false
+                        },
+                        {
+                            "name": "text-size",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "value": 16,
+                                                "unit": null,
+                                                "index": 1027
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 1027,
+                            "symbolizer": "text",
+                            "filename": null,
+                            "variable": false
+                        },
+                        {
+                            "selectors": [
+                                {
+                                    "elements": [],
+                                    "filters": {
+                                        "filters": {}
+                                    },
+                                    "zoom": [
+                                        {
+                                            "op": ">=",
+                                            "value": {
+                                                "value": 10,
+                                                "unit": null,
+                                                "index": 1046
+                                            },
+                                            "index": 1046
+                                        }
+                                    ],
+                                    "conditions": 1,
+                                    "index": 1046
+                                }
+                            ],
+                            "rules": [
+                                {
+                                    "name": "text-size",
+                                    "instance": "__default__",
+                                    "value": {
+                                        "value": [
+                                            {
+                                                "value": [
+                                                    {
+                                                        "value": 18,
+                                                        "unit": null,
+                                                        "index": 1059
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "index": 1059,
+                                    "symbolizer": "text",
+                                    "filename": null,
+                                    "variable": false
+                                }
+                            ],
+                            "_lookups": {}
+                        },
+                        {
+                            "selectors": [
+                                {
+                                    "elements": [],
+                                    "filters": {
+                                        "filters": {}
+                                    },
+                                    "zoom": [
+                                        {
+                                            "op": ">=",
+                                            "value": {
+                                                "value": 12,
+                                                "unit": null,
+                                                "index": 1080
+                                            },
+                                            "index": 1080
+                                        }
+                                    ],
+                                    "conditions": 1,
+                                    "index": 1080
+                                }
+                            ],
+                            "rules": [
+                                {
+                                    "name": "text-size",
+                                    "instance": "__default__",
+                                    "value": {
+                                        "value": [
+                                            {
+                                                "value": [
+                                                    {
+                                                        "value": 24,
+                                                        "unit": null,
+                                                        "index": 1093
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "index": 1093,
+                                    "symbolizer": "text",
+                                    "filename": null,
+                                    "variable": false
+                                }
+                            ],
+                            "_lookups": {}
+                        }
+                    ],
+                    "_lookups": {}
+                },
+                {
+                    "selectors": [
+                        {
+                            "elements": [],
+                            "filters": {
+                                "filters": {
+                                    "[type]=": {
+                                        "key": {
+                                            "value": "type"
+                                        },
+                                        "op": "=",
+                                        "val": {
+                                            "value": "town"
+                                        },
+                                        "index": 1116,
+                                        "filename": null,
+                                        "id": "[type]=town"
+                                    }
+                                }
+                            },
+                            "zoom": [
+                                {
+                                    "op": "<=",
+                                    "value": {
+                                        "value": 17,
+                                        "unit": null,
+                                        "index": 1129
+                                    },
+                                    "index": 1129
+                                }
+                            ],
+                            "conditions": 2,
+                            "index": 1129
+                        }
+                    ],
+                    "rules": [
+                        {
+                            "name": "text-name",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "name": "@name",
+                                                "index": 1157,
+                                                "filename": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 1146,
+                            "symbolizer": "text",
+                            "filename": null,
+                            "variable": false
+                        },
+                        {
+                            "name": "text-face-name",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "name": "@sans",
+                                                "index": 1184,
+                                                "filename": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 1168,
+                            "symbolizer": "text",
+                            "filename": null,
+                            "variable": false
+                        },
+                        {
+                            "name": "text-fill",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "rgb": [
+                                                    51,
+                                                    51,
+                                                    51
+                                                ],
+                                                "alpha": 1
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 1195,
+                            "symbolizer": "text",
+                            "filename": null,
+                            "variable": false
+                        },
+                        {
+                            "name": "text-size",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "value": 14,
+                                                "unit": null,
+                                                "index": 1216
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 1216,
+                            "symbolizer": "text",
+                            "filename": null,
+                            "variable": false
+                        },
+                        {
+                            "selectors": [
+                                {
+                                    "elements": [],
+                                    "filters": {
+                                        "filters": {}
+                                    },
+                                    "zoom": [
+                                        {
+                                            "op": ">=",
+                                            "value": {
+                                                "value": 10,
+                                                "unit": null,
+                                                "index": 1235
+                                            },
+                                            "index": 1235
+                                        }
+                                    ],
+                                    "conditions": 1,
+                                    "index": 1235
+                                }
+                            ],
+                            "rules": [
+                                {
+                                    "name": "text-size",
+                                    "instance": "__default__",
+                                    "value": {
+                                        "value": [
+                                            {
+                                                "value": [
+                                                    {
+                                                        "value": 16,
+                                                        "unit": null,
+                                                        "index": 1248
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "index": 1248,
+                                    "symbolizer": "text",
+                                    "filename": null,
+                                    "variable": false
+                                }
+                            ],
+                            "_lookups": {}
+                        },
+                        {
+                            "selectors": [
+                                {
+                                    "elements": [],
+                                    "filters": {
+                                        "filters": {}
+                                    },
+                                    "zoom": [
+                                        {
+                                            "op": ">=",
+                                            "value": {
+                                                "value": 12,
+                                                "unit": null,
+                                                "index": 1269
+                                            },
+                                            "index": 1269
+                                        }
+                                    ],
+                                    "conditions": 1,
+                                    "index": 1269
+                                }
+                            ],
+                            "rules": [
+                                {
+                                    "name": "text-size",
+                                    "instance": "__default__",
+                                    "value": {
+                                        "value": [
+                                            {
+                                                "value": [
+                                                    {
+                                                        "value": 20,
+                                                        "unit": null,
+                                                        "index": 1282
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "index": 1282,
+                                    "symbolizer": "text",
+                                    "filename": null,
+                                    "variable": false
+                                }
+                            ],
+                            "_lookups": {}
+                        }
+                    ],
+                    "_lookups": {}
+                },
+                {
+                    "selectors": [
+                        {
+                            "elements": [],
+                            "filters": {
+                                "filters": {
+                                    "[type]=": {
+                                        "key": {
+                                            "value": "type"
+                                        },
+                                        "op": "=",
+                                        "val": {
+                                            "value": "village"
+                                        },
+                                        "index": 1305,
+                                        "filename": null,
+                                        "id": "[type]=village"
+                                    }
+                                }
+                            },
+                            "zoom": [],
+                            "conditions": 1,
+                            "index": 1305
+                        }
+                    ],
+                    "rules": [
+                        {
+                            "name": "text-name",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "name": "@name",
+                                                "index": 1339,
+                                                "filename": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 1328,
+                            "symbolizer": "text",
+                            "filename": null,
+                            "variable": false
+                        },
+                        {
+                            "name": "text-face-name",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "name": "@sans",
+                                                "index": 1366,
+                                                "filename": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 1350,
+                            "symbolizer": "text",
+                            "filename": null,
+                            "variable": false
+                        },
+                        {
+                            "name": "text-fill",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "rgb": [
+                                                    68,
+                                                    68,
+                                                    68
+                                                ],
+                                                "alpha": 1
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 1377,
+                            "symbolizer": "text",
+                            "filename": null,
+                            "variable": false
+                        },
+                        {
+                            "name": "text-size",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "value": 12,
+                                                "unit": null,
+                                                "index": 1398
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 1398,
+                            "symbolizer": "text",
+                            "filename": null,
+                            "variable": false
+                        },
+                        {
+                            "selectors": [
+                                {
+                                    "elements": [],
+                                    "filters": {
+                                        "filters": {}
+                                    },
+                                    "zoom": [
+                                        {
+                                            "op": ">=",
+                                            "value": {
+                                                "value": 12,
+                                                "unit": null,
+                                                "index": 1417
+                                            },
+                                            "index": 1417
+                                        }
+                                    ],
+                                    "conditions": 1,
+                                    "index": 1417
+                                }
+                            ],
+                            "rules": [
+                                {
+                                    "name": "text-size",
+                                    "instance": "__default__",
+                                    "value": {
+                                        "value": [
+                                            {
+                                                "value": [
+                                                    {
+                                                        "value": 14,
+                                                        "unit": null,
+                                                        "index": 1430
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "index": 1430,
+                                    "symbolizer": "text",
+                                    "filename": null,
+                                    "variable": false
+                                }
+                            ],
+                            "_lookups": {}
+                        },
+                        {
+                            "selectors": [
+                                {
+                                    "elements": [],
+                                    "filters": {
+                                        "filters": {}
+                                    },
+                                    "zoom": [
+                                        {
+                                            "op": ">=",
+                                            "value": {
+                                                "value": 14,
+                                                "unit": null,
+                                                "index": 1451
+                                            },
+                                            "index": 1451
+                                        }
+                                    ],
+                                    "conditions": 1,
+                                    "index": 1451
+                                }
+                            ],
+                            "rules": [
+                                {
+                                    "name": "text-size",
+                                    "instance": "__default__",
+                                    "value": {
+                                        "value": [
+                                            {
+                                                "value": [
+                                                    {
+                                                        "value": 18,
+                                                        "unit": null,
+                                                        "index": 1464
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "index": 1464,
+                                    "symbolizer": "text",
+                                    "filename": null,
+                                    "variable": false
+                                }
+                            ],
+                            "_lookups": {}
+                        }
+                    ],
+                    "_lookups": {}
+                },
+                {
+                    "selectors": [
+                        {
+                            "elements": [],
+                            "filters": {
+                                "filters": {
+                                    "[type]=": {
+                                        "key": {
+                                            "value": "type"
+                                        },
+                                        "op": "=",
+                                        "val": {
+                                            "value": "hamlet"
+                                        },
+                                        "index": 1487,
+                                        "filename": null,
+                                        "id": "[type]=hamlet"
+                                    }
+                                }
+                            },
+                            "zoom": [],
+                            "conditions": 1,
+                            "index": 1487
+                        },
+                        {
+                            "elements": [],
+                            "filters": {
+                                "filters": {
+                                    "[type]=": {
+                                        "key": {
+                                            "value": "type"
+                                        },
+                                        "op": "=",
+                                        "val": {
+                                            "value": "suburb"
+                                        },
+                                        "index": 1506,
+                                        "filename": null,
+                                        "id": "[type]=suburb"
+                                    }
+                                }
+                            },
+                            "zoom": [],
+                            "conditions": 1,
+                            "index": 1506
+                        },
+                        {
+                            "elements": [],
+                            "filters": {
+                                "filters": {
+                                    "[type]=": {
+                                        "key": {
+                                            "value": "type"
+                                        },
+                                        "op": "=",
+                                        "val": {
+                                            "value": "neighbourhood"
+                                        },
+                                        "index": 1525,
+                                        "filename": null,
+                                        "id": "[type]=neighbourhood"
+                                    }
+                                }
+                            },
+                            "zoom": [],
+                            "conditions": 1,
+                            "index": 1525
+                        }
+                    ],
+                    "rules": [
+                        {
+                            "name": "text-name",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "name": "@name",
+                                                "index": 1565,
+                                                "filename": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 1554,
+                            "symbolizer": "text",
+                            "filename": null,
+                            "variable": false
+                        },
+                        {
+                            "name": "text-face-name",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "name": "@sans",
+                                                "index": 1592,
+                                                "filename": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 1576,
+                            "symbolizer": "text",
+                            "filename": null,
+                            "variable": false
+                        },
+                        {
+                            "name": "text-fill",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "rgb": [
+                                                    102,
+                                                    102,
+                                                    102
+                                                ],
+                                                "alpha": 1
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 1603,
+                            "symbolizer": "text",
+                            "filename": null,
+                            "variable": false
+                        },
+                        {
+                            "name": "text-size",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "value": 12,
+                                                "unit": null,
+                                                "index": 1624
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 1624,
+                            "symbolizer": "text",
+                            "filename": null,
+                            "variable": false
+                        },
+                        {
+                            "selectors": [
+                                {
+                                    "elements": [],
+                                    "filters": {
+                                        "filters": {}
+                                    },
+                                    "zoom": [
+                                        {
+                                            "op": ">=",
+                                            "value": {
+                                                "value": 14,
+                                                "unit": null,
+                                                "index": 1643
+                                            },
+                                            "index": 1643
+                                        }
+                                    ],
+                                    "conditions": 1,
+                                    "index": 1643
+                                }
+                            ],
+                            "rules": [
+                                {
+                                    "name": "text-size",
+                                    "instance": "__default__",
+                                    "value": {
+                                        "value": [
+                                            {
+                                                "value": [
+                                                    {
+                                                        "value": 14,
+                                                        "unit": null,
+                                                        "index": 1656
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "index": 1656,
+                                    "symbolizer": "text",
+                                    "filename": null,
+                                    "variable": false
+                                }
+                            ],
+                            "_lookups": {}
+                        },
+                        {
+                            "selectors": [
+                                {
+                                    "elements": [],
+                                    "filters": {
+                                        "filters": {}
+                                    },
+                                    "zoom": [
+                                        {
+                                            "op": ">=",
+                                            "value": {
+                                                "value": 16,
+                                                "unit": null,
+                                                "index": 1677
+                                            },
+                                            "index": 1677
+                                        }
+                                    ],
+                                    "conditions": 1,
+                                    "index": 1677
+                                }
+                            ],
+                            "rules": [
+                                {
+                                    "name": "text-size",
+                                    "instance": "__default__",
+                                    "value": {
+                                        "value": [
+                                            {
+                                                "value": [
+                                                    {
+                                                        "value": 16,
+                                                        "unit": null,
+                                                        "index": 1690
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "index": 1690,
+                                    "symbolizer": "text",
+                                    "filename": null,
+                                    "variable": false
+                                }
+                            ],
+                            "_lookups": {}
+                        }
+                    ],
+                    "_lookups": {}
+                }
+            ],
+            "_lookups": {}
+        },
+        {
+            "value": "// Water Features //",
+            "silent": true
+        },
+        {
+            "selectors": [
+                {
+                    "elements": [
+                        {
+                            "value": "#water",
+                            "type": "id",
+                            "clean": "water"
+                        }
+                    ],
+                    "filters": {
+                        "filters": {}
+                    },
+                    "zoom": [],
+                    "conditions": 0,
+                    "index": 1736
+                }
+            ],
+            "rules": [
+                {
+                    "name": "polygon-fill",
+                    "instance": "__default__",
+                    "value": {
+                        "value": [
+                            {
+                                "value": [
+                                    {
+                                        "name": "@water",
+                                        "index": 1761,
+                                        "filename": null
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "index": 1747,
+                    "symbolizer": "polygon",
+                    "filename": null,
+                    "variable": false
+                },
+                {
+                    "name": "polygon-gamma",
+                    "instance": "__default__",
+                    "value": {
+                        "value": [
+                            {
+                                "value": [
+                                    {
+                                        "value": 0.6,
+                                        "unit": null,
+                                        "index": 1771
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "index": 1771,
+                    "symbolizer": "polygon",
+                    "filename": null,
+                    "variable": false
+                }
+            ],
+            "_lookups": {}
+        },
+        {
+            "selectors": [
+                {
+                    "elements": [
+                        {
+                            "value": "#water_label",
+                            "type": "id",
+                            "clean": "water_label"
+                        }
+                    ],
+                    "filters": {
+                        "filters": {}
+                    },
+                    "zoom": [],
+                    "conditions": 0,
+                    "index": 1794
+                }
+            ],
+            "rules": [
+                {
+                    "selectors": [
+                        {
+                            "elements": [],
+                            "filters": {
+                                "filters": {}
+                            },
+                            "zoom": [
+                                {
+                                    "op": "<=",
+                                    "value": {
+                                        "value": 13,
+                                        "unit": null,
+                                        "index": 1811
+                                    },
+                                    "index": 1811
+                                }
+                            ],
+                            "conditions": 1,
+                            "index": 1811
+                        },
+                        {
+                            "elements": [],
+                            "filters": {
+                                "filters": {
+                                    "[area]>": {
+                                        "key": {
+                                            "value": "area"
+                                        },
+                                        "op": ">",
+                                        "val": {
+                                            "value": 500000,
+                                            "unit": null,
+                                            "index": 1876
+                                        },
+                                        "index": 1876,
+                                        "filename": null,
+                                        "id": "[area]>500000"
+                                    }
+                                }
+                            },
+                            "zoom": [
+                                {
+                                    "op": ">=",
+                                    "value": {
+                                        "value": 14,
+                                        "unit": null,
+                                        "index": 1866
+                                    },
+                                    "index": 1866
+                                }
+                            ],
+                            "conditions": 2,
+                            "index": 1876
+                        },
+                        {
+                            "elements": [],
+                            "filters": {
+                                "filters": {
+                                    "[area]>": {
+                                        "key": {
+                                            "value": "area"
+                                        },
+                                        "op": ">",
+                                        "val": {
+                                            "value": 10000,
+                                            "unit": null,
+                                            "index": 1903
+                                        },
+                                        "index": 1903,
+                                        "filename": null,
+                                        "id": "[area]>10000"
+                                    }
+                                }
+                            },
+                            "zoom": [
+                                {
+                                    "op": ">=",
+                                    "value": {
+                                        "value": 16,
+                                        "unit": null,
+                                        "index": 1893
+                                    },
+                                    "index": 1893
+                                }
+                            ],
+                            "conditions": 2,
+                            "index": 1903
+                        },
+                        {
+                            "elements": [],
+                            "filters": {
+                                "filters": {}
+                            },
+                            "zoom": [
+                                {
+                                    "op": ">=",
+                                    "value": {
+                                        "value": 17,
+                                        "unit": null,
+                                        "index": 1919
+                                    },
+                                    "index": 1919
+                                }
+                            ],
+                            "conditions": 1,
+                            "index": 1919
+                        }
+                    ],
+                    "rules": [
+                        {
+                            "name": "text-name",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "name": "@name",
+                                                "index": 1947,
+                                                "filename": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 1936,
+                            "symbolizer": "text",
+                            "filename": null,
+                            "variable": false
+                        },
+                        {
+                            "name": "text-face-name",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "name": "@sans_italic",
+                                                "index": 1974,
+                                                "filename": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 1958,
+                            "symbolizer": "text",
+                            "filename": null,
+                            "variable": false
+                        },
+                        {
+                            "name": "text-fill",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "name": "darken",
+                                                "args": [
+                                                    {
+                                                        "value": [
+                                                            {
+                                                                "name": "@water",
+                                                                "index": 2010,
+                                                                "filename": null
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "value": [
+                                                            {
+                                                                "value": 30,
+                                                                "unit": "%",
+                                                                "index": 1992
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "index": 2022
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 1992,
+                            "symbolizer": "text",
+                            "filename": null,
+                            "variable": false
+                        },
+                        {
+                            "name": "text-size",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "value": 13,
+                                                "unit": null,
+                                                "index": 2028
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 2028,
+                            "symbolizer": "text",
+                            "filename": null,
+                            "variable": false
+                        },
+                        {
+                            "name": "text-wrap-width",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "value": 100,
+                                                "unit": null,
+                                                "index": 2047
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 2047,
+                            "symbolizer": "text",
+                            "filename": null,
+                            "variable": false
+                        },
+                        {
+                            "name": "text-wrap-before",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "value": "true",
+                                                "is": "boolean"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 2073,
+                            "symbolizer": "text",
+                            "filename": null,
+                            "variable": false
+                        }
+                    ],
+                    "_lookups": {}
+                }
+            ],
+            "_lookups": {}
+        },
+        {
+            "selectors": [
+                {
+                    "elements": [
+                        {
+                            "value": "#waterway",
+                            "type": "id",
+                            "clean": "waterway"
+                        }
+                    ],
+                    "filters": {
+                        "filters": {}
+                    },
+                    "zoom": [],
+                    "conditions": 0,
+                    "index": 2104
+                }
+            ],
+            "rules": [
+                {
+                    "selectors": [
+                        {
+                            "elements": [],
+                            "filters": {
+                                "filters": {
+                                    "[type]=": {
+                                        "key": {
+                                            "value": "type"
+                                        },
+                                        "op": "=",
+                                        "val": {
+                                            "value": "river"
+                                        },
+                                        "index": 2118,
+                                        "filename": null,
+                                        "id": "[type]=river"
+                                    }
+                                }
+                            },
+                            "zoom": [],
+                            "conditions": 1,
+                            "index": 2118
+                        },
+                        {
+                            "elements": [],
+                            "filters": {
+                                "filters": {
+                                    "[type]=": {
+                                        "key": {
+                                            "value": "type"
+                                        },
+                                        "op": "=",
+                                        "val": {
+                                            "value": "canal"
+                                        },
+                                        "index": 2136,
+                                        "filename": null,
+                                        "id": "[type]=canal"
+                                    }
+                                }
+                            },
+                            "zoom": [],
+                            "conditions": 1,
+                            "index": 2136
+                        }
+                    ],
+                    "rules": [
+                        {
+                            "name": "line-color",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "name": "@water",
+                                                "index": 2169,
+                                                "filename": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 2157,
+                            "symbolizer": "line",
+                            "filename": null,
+                            "variable": false
+                        },
+                        {
+                            "name": "line-width",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "value": 0.5,
+                                                "unit": null,
+                                                "index": 2181
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 2181,
+                            "symbolizer": "line",
+                            "filename": null,
+                            "variable": false
+                        },
+                        {
+                            "selectors": [
+                                {
+                                    "elements": [],
+                                    "filters": {
+                                        "filters": {}
+                                    },
+                                    "zoom": [
+                                        {
+                                            "op": ">=",
+                                            "value": {
+                                                "value": 12,
+                                                "unit": null,
+                                                "index": 2202
+                                            },
+                                            "index": 2202
+                                        }
+                                    ],
+                                    "conditions": 1,
+                                    "index": 2202
+                                }
+                            ],
+                            "rules": [
+                                {
+                                    "name": "line-width",
+                                    "instance": "__default__",
+                                    "value": {
+                                        "value": [
+                                            {
+                                                "value": [
+                                                    {
+                                                        "value": 1,
+                                                        "unit": null,
+                                                        "index": 2215
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "index": 2215,
+                                    "symbolizer": "line",
+                                    "filename": null,
+                                    "variable": false
+                                }
+                            ],
+                            "_lookups": {}
+                        },
+                        {
+                            "selectors": [
+                                {
+                                    "elements": [],
+                                    "filters": {
+                                        "filters": {}
+                                    },
+                                    "zoom": [
+                                        {
+                                            "op": ">=",
+                                            "value": {
+                                                "value": 14,
+                                                "unit": null,
+                                                "index": 2236
+                                            },
+                                            "index": 2236
+                                        }
+                                    ],
+                                    "conditions": 1,
+                                    "index": 2236
+                                }
+                            ],
+                            "rules": [
+                                {
+                                    "name": "line-width",
+                                    "instance": "__default__",
+                                    "value": {
+                                        "value": [
+                                            {
+                                                "value": [
+                                                    {
+                                                        "value": 2,
+                                                        "unit": null,
+                                                        "index": 2249
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "index": 2249,
+                                    "symbolizer": "line",
+                                    "filename": null,
+                                    "variable": false
+                                }
+                            ],
+                            "_lookups": {}
+                        },
+                        {
+                            "selectors": [
+                                {
+                                    "elements": [],
+                                    "filters": {
+                                        "filters": {}
+                                    },
+                                    "zoom": [
+                                        {
+                                            "op": ">=",
+                                            "value": {
+                                                "value": 16,
+                                                "unit": null,
+                                                "index": 2270
+                                            },
+                                            "index": 2270
+                                        }
+                                    ],
+                                    "conditions": 1,
+                                    "index": 2270
+                                }
+                            ],
+                            "rules": [
+                                {
+                                    "name": "line-width",
+                                    "instance": "__default__",
+                                    "value": {
+                                        "value": [
+                                            {
+                                                "value": [
+                                                    {
+                                                        "value": 3,
+                                                        "unit": null,
+                                                        "index": 2283
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "index": 2283,
+                                    "symbolizer": "line",
+                                    "filename": null,
+                                    "variable": false
+                                }
+                            ],
+                            "_lookups": {}
+                        }
+                    ],
+                    "_lookups": {}
+                },
+                {
+                    "selectors": [
+                        {
+                            "elements": [],
+                            "filters": {
+                                "filters": {
+                                    "[type]=": {
+                                        "key": {
+                                            "value": "type"
+                                        },
+                                        "op": "=",
+                                        "val": {
+                                            "value": "stream"
+                                        },
+                                        "index": 2306,
+                                        "filename": null,
+                                        "id": "[type]=stream"
+                                    }
+                                }
+                            },
+                            "zoom": [],
+                            "conditions": 1,
+                            "index": 2306
+                        }
+                    ],
+                    "rules": [
+                        {
+                            "name": "line-color",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "name": "@water",
+                                                "index": 2340,
+                                                "filename": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 2328,
+                            "symbolizer": "line",
+                            "filename": null,
+                            "variable": false
+                        },
+                        {
+                            "name": "line-width",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "value": 0.5,
+                                                "unit": null,
+                                                "index": 2352
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 2352,
+                            "symbolizer": "line",
+                            "filename": null,
+                            "variable": false
+                        },
+                        {
+                            "selectors": [
+                                {
+                                    "elements": [],
+                                    "filters": {
+                                        "filters": {}
+                                    },
+                                    "zoom": [
+                                        {
+                                            "op": ">=",
+                                            "value": {
+                                                "value": 14,
+                                                "unit": null,
+                                                "index": 2373
+                                            },
+                                            "index": 2373
+                                        }
+                                    ],
+                                    "conditions": 1,
+                                    "index": 2373
+                                }
+                            ],
+                            "rules": [
+                                {
+                                    "name": "line-width",
+                                    "instance": "__default__",
+                                    "value": {
+                                        "value": [
+                                            {
+                                                "value": [
+                                                    {
+                                                        "value": 1,
+                                                        "unit": null,
+                                                        "index": 2386
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "index": 2386,
+                                    "symbolizer": "line",
+                                    "filename": null,
+                                    "variable": false
+                                }
+                            ],
+                            "_lookups": {}
+                        },
+                        {
+                            "selectors": [
+                                {
+                                    "elements": [],
+                                    "filters": {
+                                        "filters": {}
+                                    },
+                                    "zoom": [
+                                        {
+                                            "op": ">=",
+                                            "value": {
+                                                "value": 16,
+                                                "unit": null,
+                                                "index": 2407
+                                            },
+                                            "index": 2407
+                                        }
+                                    ],
+                                    "conditions": 1,
+                                    "index": 2407
+                                }
+                            ],
+                            "rules": [
+                                {
+                                    "name": "line-width",
+                                    "instance": "__default__",
+                                    "value": {
+                                        "value": [
+                                            {
+                                                "value": [
+                                                    {
+                                                        "value": 2,
+                                                        "unit": null,
+                                                        "index": 2420
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "index": 2420,
+                                    "symbolizer": "line",
+                                    "filename": null,
+                                    "variable": false
+                                }
+                            ],
+                            "_lookups": {}
+                        },
+                        {
+                            "selectors": [
+                                {
+                                    "elements": [],
+                                    "filters": {
+                                        "filters": {}
+                                    },
+                                    "zoom": [
+                                        {
+                                            "op": ">=",
+                                            "value": {
+                                                "value": 18,
+                                                "unit": null,
+                                                "index": 2441
+                                            },
+                                            "index": 2441
+                                        }
+                                    ],
+                                    "conditions": 1,
+                                    "index": 2441
+                                }
+                            ],
+                            "rules": [
+                                {
+                                    "name": "line-width",
+                                    "instance": "__default__",
+                                    "value": {
+                                        "value": [
+                                            {
+                                                "value": [
+                                                    {
+                                                        "value": 3,
+                                                        "unit": null,
+                                                        "index": 2454
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "index": 2454,
+                                    "symbolizer": "line",
+                                    "filename": null,
+                                    "variable": false
+                                }
+                            ],
+                            "_lookups": {}
+                        }
+                    ],
+                    "_lookups": {}
+                }
+            ],
+            "_lookups": {}
+        },
+        {
+            "value": "// Roads & Railways //",
+            "silent": true
+        },
+        {
+            "selectors": [
+                {
+                    "elements": [
+                        {
+                            "value": "#tunnel",
+                            "type": "id",
+                            "clean": "tunnel"
+                        }
+                    ],
+                    "filters": {
+                        "filters": {}
+                    },
+                    "zoom": [],
+                    "conditions": 0,
+                    "index": 2502
+                }
+            ],
+            "rules": [
+                {
+                    "name": "opacity",
+                    "instance": "__default__",
+                    "value": {
+                        "value": [
+                            {
+                                "value": [
+                                    {
+                                        "value": 0.5,
+                                        "unit": null,
+                                        "index": 2512
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "index": 2512,
+                    "symbolizer": "*",
+                    "filename": null,
+                    "variable": false
+                }
+            ],
+            "_lookups": {}
+        },
+        {
+            "selectors": [
+                {
+                    "elements": [
+                        {
+                            "value": "#road",
+                            "type": "id",
+                            "clean": "road"
+                        }
+                    ],
+                    "filters": {
+                        "filters": {}
+                    },
+                    "zoom": [],
+                    "conditions": 0,
+                    "index": 2529
+                },
+                {
+                    "elements": [
+                        {
+                            "value": "#tunnel",
+                            "type": "id",
+                            "clean": "tunnel"
+                        }
+                    ],
+                    "filters": {
+                        "filters": {}
+                    },
+                    "zoom": [],
+                    "conditions": 0,
+                    "index": 2529
+                },
+                {
+                    "elements": [
+                        {
+                            "value": "#bridge",
+                            "type": "id",
+                            "clean": "bridge"
+                        }
+                    ],
+                    "filters": {
+                        "filters": {}
+                    },
+                    "zoom": [],
+                    "conditions": 0,
+                    "index": 2529
+                }
+            ],
+            "rules": [
+                {
+                    "selectors": [
+                        {
+                            "elements": [],
+                            "filters": {
+                                "filters": {
+                                    "[mapnik::geometry_type]=": {
+                                        "key": {
+                                            "value": "mapnik::geometry_type"
+                                        },
+                                        "op": "=",
+                                        "val": {
+                                            "value": 2,
+                                            "unit": null,
+                                            "index": 2557
+                                        },
+                                        "index": 2557,
+                                        "filename": null,
+                                        "id": "[mapnik::geometry_type]=2"
+                                    }
+                                }
+                            },
+                            "zoom": [],
+                            "conditions": 1,
+                            "index": 2557
+                        }
+                    ],
+                    "rules": [
+                        {
+                            "name": "line-color",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "rgb": [
+                                                    204,
+                                                    221,
+                                                    238
+                                                ],
+                                                "alpha": 1
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 2591,
+                            "symbolizer": "line",
+                            "filename": null,
+                            "variable": false
+                        },
+                        {
+                            "name": "line-width",
+                            "instance": "__default__",
+                            "value": {
+                                "value": [
+                                    {
+                                        "value": [
+                                            {
+                                                "value": 0.5,
+                                                "unit": null,
+                                                "index": 2613
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "index": 2613,
+                            "symbolizer": "line",
+                            "filename": null,
+                            "variable": false
+                        },
+                        {
+                            "selectors": [
+                                {
+                                    "elements": [],
+                                    "filters": {
+                                        "filters": {
+                                            "[class]=": {
+                                                "key": {
+                                                    "value": "class"
+                                                },
+                                                "op": "=",
+                                                "val": {
+                                                    "value": "motorway"
+                                                },
+                                                "index": 2634,
+                                                "filename": null,
+                                                "id": "[class]=motorway"
+                                            }
+                                        }
+                                    },
+                                    "zoom": [],
+                                    "conditions": 1,
+                                    "index": 2634
+                                },
+                                {
+                                    "elements": [],
+                                    "filters": {
+                                        "filters": {
+                                            "[class]=": {
+                                                "key": {
+                                                    "value": "class"
+                                                },
+                                                "op": "=",
+                                                "val": {
+                                                    "value": "main"
+                                                },
+                                                "index": 2658,
+                                                "filename": null,
+                                                "id": "[class]=main"
+                                            }
+                                        }
+                                    },
+                                    "zoom": [],
+                                    "conditions": 1,
+                                    "index": 2658
+                                }
+                            ],
+                            "rules": [
+                                {
+                                    "selectors": [
+                                        {
+                                            "elements": [],
+                                            "filters": {
+                                                "filters": {}
+                                            },
+                                            "zoom": [
+                                                {
+                                                    "op": ">=",
+                                                    "value": {
+                                                        "value": 10,
+                                                        "unit": null,
+                                                        "index": 2681
+                                                    },
+                                                    "index": 2681
+                                                }
+                                            ],
+                                            "conditions": 1,
+                                            "index": 2681
+                                        }
+                                    ],
+                                    "rules": [
+                                        {
+                                            "name": "line-width",
+                                            "instance": "__default__",
+                                            "value": {
+                                                "value": [
+                                                    {
+                                                        "value": [
+                                                            {
+                                                                "value": 1,
+                                                                "unit": null,
+                                                                "index": 2694
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "index": 2694,
+                                            "symbolizer": "line",
+                                            "filename": null,
+                                            "variable": false
+                                        }
+                                    ],
+                                    "_lookups": {}
+                                },
+                                {
+                                    "selectors": [
+                                        {
+                                            "elements": [],
+                                            "filters": {
+                                                "filters": {}
+                                            },
+                                            "zoom": [
+                                                {
+                                                    "op": ">=",
+                                                    "value": {
+                                                        "value": 12,
+                                                        "unit": null,
+                                                        "index": 2717
+                                                    },
+                                                    "index": 2717
+                                                }
+                                            ],
+                                            "conditions": 1,
+                                            "index": 2717
+                                        }
+                                    ],
+                                    "rules": [
+                                        {
+                                            "name": "line-width",
+                                            "instance": "__default__",
+                                            "value": {
+                                                "value": [
+                                                    {
+                                                        "value": [
+                                                            {
+                                                                "value": 2,
+                                                                "unit": null,
+                                                                "index": 2730
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "index": 2730,
+                                            "symbolizer": "line",
+                                            "filename": null,
+                                            "variable": false
+                                        }
+                                    ],
+                                    "_lookups": {}
+                                },
+                                {
+                                    "selectors": [
+                                        {
+                                            "elements": [],
+                                            "filters": {
+                                                "filters": {}
+                                            },
+                                            "zoom": [
+                                                {
+                                                    "op": ">=",
+                                                    "value": {
+                                                        "value": 14,
+                                                        "unit": null,
+                                                        "index": 2753
+                                                    },
+                                                    "index": 2753
+                                                }
+                                            ],
+                                            "conditions": 1,
+                                            "index": 2753
+                                        }
+                                    ],
+                                    "rules": [
+                                        {
+                                            "name": "line-width",
+                                            "instance": "__default__",
+                                            "value": {
+                                                "value": [
+                                                    {
+                                                        "value": [
+                                                            {
+                                                                "value": 3,
+                                                                "unit": null,
+                                                                "index": 2766
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "index": 2766,
+                                            "symbolizer": "line",
+                                            "filename": null,
+                                            "variable": false
+                                        }
+                                    ],
+                                    "_lookups": {}
+                                },
+                                {
+                                    "selectors": [
+                                        {
+                                            "elements": [],
+                                            "filters": {
+                                                "filters": {}
+                                            },
+                                            "zoom": [
+                                                {
+                                                    "op": ">=",
+                                                    "value": {
+                                                        "value": 16,
+                                                        "unit": null,
+                                                        "index": 2789
+                                                    },
+                                                    "index": 2789
+                                                }
+                                            ],
+                                            "conditions": 1,
+                                            "index": 2789
+                                        }
+                                    ],
+                                    "rules": [
+                                        {
+                                            "name": "line-width",
+                                            "instance": "__default__",
+                                            "value": {
+                                                "value": [
+                                                    {
+                                                        "value": [
+                                                            {
+                                                                "value": 5,
+                                                                "unit": null,
+                                                                "index": 2802
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "index": 2802,
+                                            "symbolizer": "line",
+                                            "filename": null,
+                                            "variable": false
+                                        }
+                                    ],
+                                    "_lookups": {}
+                                }
+                            ],
+                            "_lookups": {}
+                        },
+                        {
+                            "selectors": [
+                                {
+                                    "elements": [],
+                                    "filters": {
+                                        "filters": {
+                                            "[class]=": {
+                                                "key": {
+                                                    "value": "class"
+                                                },
+                                                "op": "=",
+                                                "val": {
+                                                    "value": "street"
+                                                },
+                                                "index": 2829,
+                                                "filename": null,
+                                                "id": "[class]=street"
+                                            }
+                                        }
+                                    },
+                                    "zoom": [],
+                                    "conditions": 1,
+                                    "index": 2829
+                                },
+                                {
+                                    "elements": [],
+                                    "filters": {
+                                        "filters": {
+                                            "[class]=": {
+                                                "key": {
+                                                    "value": "class"
+                                                },
+                                                "op": "=",
+                                                "val": {
+                                                    "value": "street_limited"
+                                                },
+                                                "index": 2851,
+                                                "filename": null,
+                                                "id": "[class]=street_limited"
+                                            }
+                                        }
+                                    },
+                                    "zoom": [],
+                                    "conditions": 1,
+                                    "index": 2851
+                                }
+                            ],
+                            "rules": [
+                                {
+                                    "selectors": [
+                                        {
+                                            "elements": [],
+                                            "filters": {
+                                                "filters": {}
+                                            },
+                                            "zoom": [
+                                                {
+                                                    "op": ">=",
+                                                    "value": {
+                                                        "value": 14,
+                                                        "unit": null,
+                                                        "index": 2884
+                                                    },
+                                                    "index": 2884
+                                                }
+                                            ],
+                                            "conditions": 1,
+                                            "index": 2884
+                                        }
+                                    ],
+                                    "rules": [
+                                        {
+                                            "name": "line-width",
+                                            "instance": "__default__",
+                                            "value": {
+                                                "value": [
+                                                    {
+                                                        "value": [
+                                                            {
+                                                                "value": 1,
+                                                                "unit": null,
+                                                                "index": 2897
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "index": 2897,
+                                            "symbolizer": "line",
+                                            "filename": null,
+                                            "variable": false
+                                        }
+                                    ],
+                                    "_lookups": {}
+                                },
+                                {
+                                    "selectors": [
+                                        {
+                                            "elements": [],
+                                            "filters": {
+                                                "filters": {}
+                                            },
+                                            "zoom": [
+                                                {
+                                                    "op": ">=",
+                                                    "value": {
+                                                        "value": 16,
+                                                        "unit": null,
+                                                        "index": 2920
+                                                    },
+                                                    "index": 2920
+                                                }
+                                            ],
+                                            "conditions": 1,
+                                            "index": 2920
+                                        }
+                                    ],
+                                    "rules": [
+                                        {
+                                            "name": "line-width",
+                                            "instance": "__default__",
+                                            "value": {
+                                                "value": [
+                                                    {
+                                                        "value": [
+                                                            {
+                                                                "value": 2,
+                                                                "unit": null,
+                                                                "index": 2933
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "index": 2933,
+                                            "symbolizer": "line",
+                                            "filename": null,
+                                            "variable": false
+                                        }
+                                    ],
+                                    "_lookups": {}
+                                }
+                            ],
+                            "_lookups": {}
+                        },
+                        {
+                            "selectors": [
+                                {
+                                    "elements": [],
+                                    "filters": {
+                                        "filters": {
+                                            "[class]=": {
+                                                "key": {
+                                                    "value": "class"
+                                                },
+                                                "op": "=",
+                                                "val": {
+                                                    "value": "street_limited"
+                                                },
+                                                "index": 2960,
+                                                "filename": null,
+                                                "id": "[class]=street_limited"
+                                            }
+                                        }
+                                    },
+                                    "zoom": [],
+                                    "conditions": 1,
+                                    "index": 2960
+                                }
+                            ],
+                            "rules": [
+                                {
+                                    "name": "line-dasharray",
+                                    "instance": "__default__",
+                                    "value": {
+                                        "value": [
+                                            {
+                                                "value": 4,
+                                                "unit": null,
+                                                "index": 2987
+                                            },
+                                            {
+                                                "value": 1,
+                                                "unit": null,
+                                                "index": 2987
+                                            }
+                                        ]
+                                    },
+                                    "index": 2987,
+                                    "symbolizer": "line",
+                                    "filename": null,
+                                    "variable": false
+                                }
+                            ],
+                            "_lookups": {}
+                        }
+                    ],
+                    "_lookups": {}
+                }
+            ],
+            "_lookups": {}
+        }
+    ],
+    "_lookups": {},
+    "root": true
+}

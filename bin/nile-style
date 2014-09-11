@@ -1,0 +1,32 @@
+#!/usr/bin/env node
+var pjson = require('../package.json'),
+  main = require('../lib/main'),
+  program = require('commander'),
+  showhelp = true;
+
+
+
+var help = function(){
+    var examples = [];
+    console.log(examples.join("\n"));
+}
+
+program
+    .version(pjson.version)
+    .description('nile style your map')
+    .usage('[options]')
+    .option('-c, --create <stylefile>', 'create a style instruction file from the given stylefile')
+    .option('-o, --output <outputfile>', 'the name of the instruction file')
+    .on('--help', help)
+    .parse(process.argv);
+if (typeof program.create==='string'){
+
+  var instruction = new main.StyleInstructions(program.create);
+  if (typeof program.output==='string'){
+    instruction.create(program.output);
+  }else{
+    console.log(instruction.create());
+  }
+}else{
+  program.help();
+}

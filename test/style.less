@@ -1,0 +1,60 @@
+@name: '[name_en]';
+
+// Fonts //
+@sans: 'Source Sans Pro Regular';
+@sans_italic: 'Source Sans Pro Italic';
+@sans_bold: 'Source Sans Pro Semibold';
+
+// Common Colors //
+@land: #fff;
+@water: #c3e6ff;
+
+.Map {
+  background-color: @land;
+  antialias: subpixel;
+}
+
+.Line {
+  [highway=track]{
+    color: gray;
+    line-width: 3;
+    contour-color: black;
+    contour-width: 1;
+  }
+
+  [highway=service]{
+    color: white;
+    line-width: 3;
+    contour-color: black;
+    contour-width: 1;
+  }
+
+  [highway=residential]{
+    color: yellow;
+    opacity: 0.5;
+    line-width: 8;
+    contour-color: black;
+    contour-width: 1;
+  }
+}
+
+.Polygon {
+  [area=yes]{
+    line-width: 0.5;
+    fill-color: 'rgb(0,0,255)';
+    opacity: 0.1;
+  }
+
+  [landuse=farmland]{
+    fill-color: 'rgb(0,180,30)';
+    opacity: 1;
+    line-width: none;
+    color: cyan;
+  }
+
+  [boundary=administrative]{
+    line-width: 0.5;
+    color: 'rgb(255,0,0)';
+  }
+
+}
