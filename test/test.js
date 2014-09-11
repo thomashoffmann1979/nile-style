@@ -12,6 +12,7 @@ Renderer = require('../lib/Renderer').Renderer;
 
 styleInstructions = new StyleInstructions(path.join(__dirname,'style.less'));
 styleInstructions.create(path.join(__dirname,'style.js'));
+
 var mystyle = require('./style').style;
 
 //nilecss.makeJS(path.join(__dirname,'style.ccss'),path.join(__dirname,'style.js'));
