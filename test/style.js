@@ -1,7 +1,7 @@
 exports.style = function (selector,tags,zoom) {
     var variables = {};
     var style = {};
-    variables["@sans"] = "Source Sans Pro Regular";
+    variables["@sans"] = "Aythaya";
     variables["@sans_italic"] = "Source Sans Pro Italic";
     variables["@sans_bold"] = "Source Sans Pro Semibold";
     variables["@land"] = "rgba(255,255,238,1)";
@@ -34,6 +34,12 @@ exports.style = function (selector,tags,zoom) {
                 style["line-width"] = 2;
                 style["contour-color"] = "rgba(0,0,128,1)";
                 style["contour-width"] = 1;
+                style["text-position"] = "path";
+                style["text-tag"] = "name";
+                style["text-size"] = 15;
+                style["text-color"] = "rgba(0,0,0,1)";
+                style["text-halo-color"] = "rgba(255,255,255,1)";
+                style["text-halo-width"] = 0.3;
             }
             if ((( ( tags['highway']  ===  'track' ) ) || ( ( tags['highway']  ===  'service' ) ))){
                 style["color"] = "rgba(255,255,255,1)";
@@ -50,6 +56,12 @@ exports.style = function (selector,tags,zoom) {
                 style["line-width"] = 3;
                 style["contour-color"] = "rgba(0,0,0,1)";
                 style["contour-width"] = 1;
+                style["text-position"] = "path";
+                style["text-tag"] = "name";
+                style["text-size"] = 15;
+                style["text-color"] = "rgba(0,0,0,1)";
+                style["text-halo-color"] = "rgba(255,255,255,1)";
+                style["text-halo-width"] = 0.3;
             }
             if ((( ( tags['highway']  ===  'residential' ) ))){
                 style["color"] = variables["@mainroad"];
@@ -57,6 +69,12 @@ exports.style = function (selector,tags,zoom) {
                 style["line-width"] = 8;
                 style["contour-color"] = "rgba(0,0,0,1)";
                 style["contour-width"] = 1;
+                style["text-position"] = "path";
+                style["text-tag"] = "name";
+                style["text-size"] = 15;
+                style["text-color"] = "rgba(0,0,0,1)";
+                style["text-halo-color"] = "rgba(255,255,255,1)";
+                style["text-halo-width"] = 0.3;
             }
         }
         if ((( ( zoom >= 10 ) ))){
@@ -65,6 +83,12 @@ exports.style = function (selector,tags,zoom) {
                 style["line-width"] = 9;
                 style["contour-color"] = "rgba(0,0,0,1)";
                 style["contour-width"] = 1;
+                style["text-position"] = "path";
+                style["text-tag"] = "name";
+                style["text-size"] = 15;
+                style["text-color"] = "rgba(0,0,0,1)";
+                style["text-halo-color"] = "rgba(255,255,255,1)";
+                style["text-halo-width"] = 0.3;
             }
             if ((( ( tags['highway']  ===  'secondary' ) ))){
                 style["color"] = variables["@mainroad"];
@@ -73,8 +97,11 @@ exports.style = function (selector,tags,zoom) {
                 style["contour-color"] = "rgba(0,0,0,1)";
                 style["contour-width"] = 1;
                 style["text-position"] = "path";
-                style["text-size"] = 12;
+                style["text-tag"] = "name";
+                style["text-size"] = 15;
                 style["text-color"] = "rgba(0,0,0,1)";
+                style["text-halo-color"] = "rgba(255,255,255,1)";
+                style["text-halo-width"] = 0.3;
             }
         }
         if ((( ( tags['bridge']  ===  'yes' ) ))){
@@ -92,6 +119,12 @@ exports.style = function (selector,tags,zoom) {
             style["line-width"] = 30;
             style["contour-color"] = "rgba(255,165,0,1)";
             style["contour-width"] = 1;
+            style["text-position"] = "path";
+            style["text-tag"] = "name";
+            style["text-size"] = 15;
+            style["text-color"] = "rgba(0,0,0,1)";
+            style["text-halo-color"] = "rgba(255,255,255,1)";
+            style["text-halo-width"] = 0.3;
         }
     }
     if ((( ( selector === 'Polygon' ) ))){
@@ -113,9 +146,10 @@ exports.style = function (selector,tags,zoom) {
                 style["line-width"] = 0.5;
                 style["color"] = "rgba(0,0,0,1)";
                 style["fill-color"] = variables["@builings"];
+                style["text-font-family"] = variables["@sans"];
                 style["text-position"] = "path";
                 style["text-tag"] = "addr:housenumber";
-                style["text-size"] = 9;
+                style["text-size"] = 19;
                 style["text-color"] = "rgba(0,0,255,1)";
                 style["text-halo-color"] = "rgba(255,255,255,1)";
                 style["text-halo-width"] = 1;
@@ -127,7 +161,7 @@ exports.style = function (selector,tags,zoom) {
 exports.filter = function (zoom) {
     var variables = {};
     var filter = [];
-    variables["@sans"] = "Source Sans Pro Regular";
+    variables["@sans"] = "Aythaya";
     variables["@sans_italic"] = "Source Sans Pro Italic";
     variables["@sans_bold"] = "Source Sans Pro Semibold";
     variables["@land"] = "rgba(255,255,238,1,1)";
