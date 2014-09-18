@@ -15,4 +15,4 @@
 
  Creating an instruction file:
 
-  nile-style -c <stylefile>
+    nile-style -c <stylefile>
